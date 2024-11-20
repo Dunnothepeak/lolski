@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yaurr</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GO GIRL</h1>
+        
+        <!-- Name input prompt -->
+        <div id="namePrompt">
+            <label for="name">Enter the name of someone you hate:</label>
+            <input type="text" id="name" placeholder="LET IT OUT">
+            <button id="submitBtn">KLL HER VIRTUALLY</button>
+        </div>
+
+        <!-- HP bar -->
+        <div id="hpBarContainer">
+            <label>HP:</label>
+            <div id="hpBar"></div>
+        </div>
+
+        <!-- Smiley emoji and punch mark -->
+        <div id="smileyContainer" style="display: none;">
+            <div id="emojiWrapper">
+                <span id="smiley" onclick="punchSmiley(event)">☺️</span>
+                <span id="punchMark">👊</span>
+            </div>
+        </div>
+        <p id="greeting"></p>
+    </div>
+    
+    <div id="fireBackground"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
